@@ -1,0 +1,65 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid rgb(15, 15, 15);
+    margin: auto;
+}
+
+#bird{
+    width: 50px;
+    height: 50px;
+    background: url(img/kisspng-flappy-bird-tap-bird-2d-spike-bird-angry-birds-5ad6f4cd3f5de2.1635481615240368132596.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+body{
+    background-color: rgb(23, 136, 170);
+}
+
+#lolipop{
+    width: 30px;
+    height: 30px;
+    background: url(img/kisspng-lollipop-candy-cane-ribbon-candy-round-swirl-lollipop-background-vector-5a86bc8651e9a0.8018188615187795263355.png);
+    background-size: 30px 30px;
+    position: relative;
+    top:120px;
+    left: 570px;
+    animation: lollipopMove 1s infinite linear;
+}
+
+@keyframes lollipopMove {
+    0%{
+        left: 570px;
+    }
+    100%{
+        left: -30px;
+    }
+    
+}
+
+.jump{
+    animation: jump 0.3s  linear;
+}
+
+@keyframes jump{
+    0%{
+        top:150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 90px;
+    }
+    80%{
+        top: 130px;
+    }
+    100%{
+        left: 150px;
+    }
+    
+}
+
+
